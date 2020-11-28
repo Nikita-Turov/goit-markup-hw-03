@@ -24,6 +24,10 @@ p {
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
 :root {
   --primary-font: "Roboto", sans-serif;
   --logo-font: "Raleway", sans-serif;
@@ -44,8 +48,8 @@ body {
   letter-spacing: 0.03em;
 }
 
-header > .logo,
-footer > .logo {
+header .logo,
+footer .logo {
   font-family: var(--logo-font);
   font-style: normal;
   font-weight: 700;
@@ -101,6 +105,45 @@ footer > .logo {
 /* ==================== END GENERAL ========= */
 
 /* ==================== header ========= */
+.header {
+  padding: 25px 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header .logo {
+  margin-right: 90px;
+}
+
+.site-nav-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.auth-nav-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav-list {
+  display: flex;
+}
+
+.auth-nav-list {
+  display: flex;
+}
+
+.auth-nav-container {
+  margin-left: auto;
+}
 
 .logo-header-second {
   font-family: inherit;
@@ -140,9 +183,14 @@ footer > .logo {
   color: var(--white-color);
   /* фон для выделения текста */
   background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 30px;
+  /* padding-left: 450px;
+  padding-right: 450px; */
 }
 
 .order-btn {
+  display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -150,6 +198,16 @@ footer > .logo {
   letter-spacing: 0.06em;
   color: var(--white-color);
   background-color: var(--accent-color);
+  min-width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 /* ==================== END hero ========= */

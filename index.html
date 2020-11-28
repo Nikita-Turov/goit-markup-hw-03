@@ -12,29 +12,35 @@
 </head>
 
 <body>
-    <header>
-        <a class="link logo" href="./index.html"><span class="logo-accent">Web</span><span class="logo-header-second">Studio</span></a>
-        <nav class="site-nav">
-            <ul  class="ul-dot">
-                <li><a class="site-nav-link link current" href="./index.html">Студия</a></li>
-                <li><a class="site-nav-link link" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="site-nav-link link" href="#">Контакты</a></li>
-            </ul>
-        </nav>
-        <div>
-            <ul  class="ul-dot">
-                <li><a class="auth-nav link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="auth-nav link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
+    <header class="header">
+        <div class="container">
+            <a class="link logo" href="./index.html"><span class="logo-accent">Web</span><span
+                    class="logo-header-second">Studio</span></a>
+            <nav class="site-nav">
+                <ul class="site-nav-list">
+                    <li class="site-nav-list-item"><a class="site-nav-link link current" href="./index.html">Студия</a></li>
+                    <li class="site-nav-list-item"><a class="site-nav-link link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="site-nav-list-item"><a class="site-nav-link link" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="auth-nav-container">
+                <ul class="auth-nav-list">
+                    <li class="auth-nav-list-item"><a class="auth-nav link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="auth-nav-list-item"><a class="auth-nav link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
     <main>
         <!-- hero -->
         <section class="hero">
-            <h1 class="visually-hidden">Сайт вэб студии WebStudio</h1>
-            <p class="hero-title">Эффективные решения для вашего бизнеса</p>
-            <button class="order-btn" type="button">Заказать услугу</button>
+            <div class="container">
+                <h1 class="visually-hidden">Сайт вэб студии WebStudio</h1>
+                <p class="hero-title">Эффективные решения <br> для вашего бизнеса</p>
+                <button class="order-btn" type="button">Заказать услугу</button>
+            </div>
         </section>
         <!-- what we do -->
         <section class="features">
