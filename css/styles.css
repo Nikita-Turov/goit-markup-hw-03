@@ -107,6 +107,13 @@ footer .logo {
 /* ==================== header ========= */
 .header {
   padding: 25px 0;
+  border: 1px solid #ececec;
+}
+
+.index-header {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header .container {
@@ -208,11 +215,37 @@ footer .logo {
   padding-right: 32px;
   margin: 0 auto;
   cursor: pointer;
+  margin-bottom: 200px;
 }
 
 /* ==================== END hero ========= */
 
 /* ==================== what we do ========= */
+
+.whatwedo .section-title {
+  margin-bottom: 50px;
+}
+
+.whatwedo-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.whatwedo-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-list {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 94px 0;
+}
+
+.features-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-item {
   color: var(--second-color);
   font-weight: 700;
@@ -233,6 +266,20 @@ footer .logo {
 /* ==================== end what we do========= */
 
 /* ==================== our team========= */
+
+.our-team .section-title {
+  padding-top: 94px;
+}
+
+.our-team-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.our-team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .our-team-list-name {
   font-weight: 500;
   font-size: 16px;
@@ -240,6 +287,7 @@ footer .logo {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-color);
+  padding-top: 30px;
 }
 
 .our-team-list-position {
@@ -249,12 +297,25 @@ footer .logo {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color);
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 /* ==================== end our team========= */
 
 /* ==================== footer========= */
 
+.footer .logo {
+  padding-top: 60px;
+}
+
+.footer .address-list {
+  padding-bottom: 60px;
+}
+
+.footer .address-list-item:not(:last-child) {
+  padding-bottom: 9px;
+}
 .logo-footer-second {
   font-family: inherit;
   color: var(--white-color);
@@ -297,6 +358,33 @@ footer > li > .address-contact {
 
 /* ==================== portfolio main ========= */
 
+.portfolio-wrapper {
+  margin-bottom: 94px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.portfolio-list-item {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  outline: 1px solid #eeeeee;
+}
+
+.portfolio-filter {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
 .portfolio-filter-btn {
   font-family: inherit;
   font-style: inherit;
@@ -306,7 +394,17 @@ footer > li > .address-contact {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-color);
+  background-color: #f5f4fa;
+  border: 1px solid transparent;
+  min-width: 73px;
+  padding: 6px 22px;
+  border-radius: 4px;
 }
+
+.portfolio-filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio-filter-btn:hover,
 .portfolio-filter-btn:focus {
   background-color: var(--accent-color);
@@ -318,6 +416,10 @@ footer > li > .address-contact {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 4px;
+  padding-top: 20px;
 }
 
 .portfolio-descr {
@@ -326,6 +428,9 @@ footer > li > .address-contact {
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--primary-color);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
 }
 
 .portfolio > h2 {
