@@ -106,17 +106,12 @@ footer .logo {
 
 /* ==================== header ========= */
 .header {
-  padding: 25px 0;
-  border: 1px solid #ececec;
-}
-
-.index-header {
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid #ececec;
 }
 
 .header .container {
+  padding-top: 25px;
+  padding-bottom: 25px;
   display: flex;
   align-items: center;
   align-content: center;
@@ -176,9 +171,18 @@ footer .logo {
 .current {
   color: var(--accent-color);
 }
+
+/* .container {
+  outline: 1px solid green; */
+}
 /* ==================== END header ========= */
 
 /* ==================== hero ========= */
+
+.hero .container {
+  padding-top: 200px;
+  padding-bottom: 280px;
+}
 
 .hero-title {
   font-weight: 900;
@@ -190,10 +194,7 @@ footer .logo {
   color: var(--white-color);
   /* фон для выделения текста */
   background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 30px;
-  /* padding-left: 450px;
-  padding-right: 450px; */
+  margin-bottom: 30px;
 }
 
 .order-btn {
@@ -215,12 +216,15 @@ footer .logo {
   padding-right: 32px;
   margin: 0 auto;
   cursor: pointer;
-  margin-bottom: 200px;
 }
 
 /* ==================== END hero ========= */
 
 /* ==================== what we do ========= */
+
+.whatwedo .container {
+  padding-bottom: 94px;
+}
 
 .whatwedo .section-title {
   margin-bottom: 50px;
@@ -228,18 +232,25 @@ footer .logo {
 
 .whatwedo-list {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .whatwedo-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
+.features .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .features-list {
   display: flex;
   align-items: center;
   align-content: center;
-  padding: 94px 0;
+}
+
+.features-list-item {
+  width: 270px;
 }
 
 .features-list-item:not(:last-child) {
@@ -267,17 +278,38 @@ footer .logo {
 
 /* ==================== our team========= */
 
+.our-team {
+  background: #f5f4fa;
+}
+
 .our-team .section-title {
+  margin-bottom: 50px;
+}
+
+.our-team .container {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .our-team-list {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .our-team-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.our-team-list-card-footer {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background: #ffffff;
+  /* нужна тень??? */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .our-team-list-name {
@@ -287,7 +319,7 @@ footer .logo {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-color);
-  padding-top: 30px;
+  margin-bottom: 10px;
 }
 
 .our-team-list-position {
@@ -297,41 +329,35 @@ footer .logo {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color);
-  padding-top: 10px;
-  padding-bottom: 30px;
 }
 
 /* ==================== end our team========= */
 
 /* ==================== footer========= */
 
-.footer .logo {
+.footer .container {
   padding-top: 60px;
-}
-
-.footer .address-list {
   padding-bottom: 60px;
-}
-
-.footer .address-list-item:not(:last-child) {
-  padding-bottom: 9px;
-}
-.logo-footer-second {
-  font-family: inherit;
-  color: var(--white-color);
   /* фон для выделения текста */
   background-color: #2f303a;
 }
 
-.address {
+.footer .address-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.logo-footer-second {
+  font-family: inherit;
+  color: var(--white-color);
+}
+
+.footer .address {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--white-color);
-  /* фон для выделения текста */
-  background-color: #2f303a;
   font-style: normal;
+  margin-top: 20px;
 }
 
 .address-map {
@@ -340,8 +366,6 @@ footer .logo {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--white-color);
-  /* фон для выделения текста */
-  background-color: #2f303a;
 }
 
 .address-contact,
@@ -351,15 +375,14 @@ footer > li > .address-contact {
   line-height: 1.174;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  /* фон для выделения текста */
-  background-color: #2f303a;
 }
 /* ==================== end footer========= */
 
 /* ==================== portfolio main ========= */
 
-.portfolio-wrapper {
-  margin-bottom: 94px;
+.portfolio .container {
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .portfolio-list {
@@ -383,7 +406,6 @@ footer > li > .address-contact {
   display: flex;
   align-content: center;
   justify-content: center;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
