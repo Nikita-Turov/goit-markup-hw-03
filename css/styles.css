@@ -36,6 +36,7 @@ img {
   --accent-color: #2196f3;
   --bcg-color: #f5f4fa;
   --white-color: #ffffff;
+  --bcg-dark-color: #2f303a;
 }
 /* ==================== GENERAL ========= */
 
@@ -172,12 +173,13 @@ footer .logo {
   color: var(--accent-color);
 }
 
-/* .container {
-  outline: 1px solid green; */
-}
 /* ==================== END header ========= */
 
 /* ==================== hero ========= */
+
+.hero {
+  background-color: var(--bcg-dark-color);
+}
 
 .hero .container {
   padding-top: 200px;
@@ -192,8 +194,6 @@ footer .logo {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  /* фон для выделения текста */
-  background-color: #2f303a;
   margin-bottom: 30px;
 }
 
@@ -264,6 +264,7 @@ footer .logo {
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .features-descr {
@@ -279,7 +280,7 @@ footer .logo {
 /* ==================== our team========= */
 
 .our-team {
-  background: #f5f4fa;
+  background-color: var(--bcg-color);
 }
 
 .our-team .section-title {
@@ -306,8 +307,7 @@ footer .logo {
   border-radius: 0px 0px 4px 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  background: #ffffff;
-  /* нужна тень??? */
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -334,12 +334,13 @@ footer .logo {
 /* ==================== end our team========= */
 
 /* ==================== footer========= */
+.footer {
+  background-color: var(--bcg-dark-color);
+}
 
 .footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
-  /* фон для выделения текста */
-  background-color: #2f303a;
 }
 
 .footer .address-list-item:not(:last-child) {
